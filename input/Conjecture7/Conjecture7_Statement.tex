@@ -1,0 +1,62 @@
+\documentclass[12pt]{amsart}
+
+\usepackage[margin=1.1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{enumitem}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\usepackage{microtype}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem*{remark}{Remark}
+\newtheorem*{example}{Example}
+
+\DeclareMathOperator{\spol}{sp}
+\DeclareMathOperator{\num}{num}
+\DeclareMathOperator{\den}{den}
+\DeclareMathOperator{\rad}{rad}
+\newcommand{\floor}[1]{\left\lfloor #1\right\rfloor}
+\newcommand{\bbfm}{Ballantine--Beck--Feigon--Maurischat}
+\newcommand{\ii}{\mathrm{i}}
+\newcommand{\OO}{\mathcal O}
+\newcommand{\TT}{\mathcal T}
+\newcommand{\BB}{\mathcal B}
+\newcommand{\ZZ}{\mathbb Z}
+
+\begin{document}
+
+Let \(\lambda=(\lambda_1,\ldots,\lambda_k)\) be a partition of \(n\).  The
+\emph{subsum polynomial} of \(\lambda\) is
+\begin{equation}
+   \spol(\lambda,x):=\prod_{j=1}^k(1+x^{\lambda_j}).
+\end{equation}
+Equivalently, if \(m_\lambda(i)\) denotes the multiplicity of the part \(i\) in
+\(\lambda\), then we have
+\[
+   \spol(\lambda,x)=\prod_{i\ge1}(1+x^i)^{m_\lambda(i)}.
+\]
+
+For binary partitions, \bbfm\ define
+\[
+   h_{B,\lambda}^{(n)}(x)
+   :=\prod_{k\ge0}(1+x^{2^k})^{\floor{n/2^k}-m_\lambda(2^k)}
+\]
+and prove that the corresponding common divisor \(G_B(n,x)\) is \(1\).  Hence
+\[
+   \num_B(n,x)=\sum_{\lambda\in\BB(n)}h_{B,\lambda}^{(n)}(x),
+   \qquad
+   \den_B(n,x)=\prod_{k\ge0}(1+x^{2^k})^{\floor{n/2^k}}.
+\]
+
+\begin{conjecture}\label{conj:conj7} For \(n\ge2\) and every \(2^s\le n\), we have
+\[
+   1+x^{2^s}\nmid \num_B(n,x).
+\]
+\end{conjecture}
+
+\end{document}

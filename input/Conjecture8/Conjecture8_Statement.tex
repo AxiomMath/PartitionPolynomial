@@ -1,0 +1,68 @@
+\documentclass[12pt]{amsart}
+
+\usepackage[margin=1.1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{enumitem}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\usepackage{microtype}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem*{remark}{Remark}
+\newtheorem*{example}{Example}
+
+\DeclareMathOperator{\spol}{sp}
+\DeclareMathOperator{\num}{num}
+\DeclareMathOperator{\den}{den}
+\DeclareMathOperator{\rad}{rad}
+\newcommand{\floor}[1]{\left\lfloor #1\right\rfloor}
+\newcommand{\bbfm}{Ballantine--Beck--Feigon--Maurischat}
+\newcommand{\ii}{\mathrm{i}}
+\newcommand{\OO}{\mathcal O}
+\newcommand{\TT}{\mathcal T}
+\newcommand{\BB}{\mathcal B}
+\newcommand{\ZZ}{\mathbb Z}
+
+\begin{document}
+
+Let \(\lambda=(\lambda_1,\ldots,\lambda_k)\) be a partition of \(n\).  The
+\emph{subsum polynomial} of \(\lambda\) is
+\begin{equation}
+   \spol(\lambda,x):=\prod_{j=1}^k(1+x^{\lambda_j}).
+\end{equation}
+Equivalently, if \(m_\lambda(i)\) denotes the multiplicity of the part \(i\) in
+\(\lambda\), then we have
+\[
+   \spol(\lambda,x)=\prod_{i\ge1}(1+x^i)^{m_\lambda(i)}.
+\]
+
+Let \(\OO(n)\) be the set of odd partitions of \(n\).  The analogous numerator is
+formed from
+\[
+   h_{O,\lambda}^{(n)}(x)
+   :=\prod_{\substack{i\ge1\\ i\text{ odd}}}
+      (1+x^i)^{\floor{n/i}-m_\lambda(i)},
+\]
+with common divisor
+\[
+   G_O(n,x):=\gcd_{\lambda\in\OO(n)}h_{O,\lambda}^{(n)}(x)
+\]
+and
+\[
+   \num_O(n,x):=\frac{1}{G_O(n,x)}
+   \sum_{\lambda\in\OO(n)}h_{O,\lambda}^{(n)}(x).
+\]
+
+\begin{conjecture}\label{conj:conj8}  Let \(\OO(n)\) be the set of odd partitions of \(n\).  If \(o(m)\) denotes
+the largest odd divisor of \(m\), then
+\[
+   \num_O(n,-1)=o(n!)\qquad(n\ge1).
+\]
+\end{conjecture}
+
+\end{document}
