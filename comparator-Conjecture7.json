@@ -1,0 +1,13 @@
+{
+  "challenge_module": "PartitionPolynomial.Conjecture7.problem",
+  "solution_module": "PartitionPolynomial.Conjecture7.solution",
+  "theorem_names": [
+    "Conj7.conjecture7"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": false
+}

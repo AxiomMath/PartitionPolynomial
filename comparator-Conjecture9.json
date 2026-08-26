@@ -1,0 +1,13 @@
+{
+  "challenge_module": "PartitionPolynomial.Conjecture9.problem",
+  "solution_module": "PartitionPolynomial.Conjecture9.solution",
+  "theorem_names": [
+    "Conj9.main_conjecture"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": false
+}

@@ -1,0 +1,13 @@
+{
+  "challenge_module": "PartitionPolynomial.Conjecture5.problem",
+  "solution_module": "PartitionPolynomial.Conjecture5.solution",
+  "theorem_names": [
+    "conj5"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": false
+}
