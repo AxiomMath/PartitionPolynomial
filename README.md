@@ -19,7 +19,12 @@ Please read `Conj{i}_Statement.tex` and formalize Conjecture~\ref{conj:conj{i}}.
 This repository can be verified against the formal problem statement with the Lean comparator on a Linux machine. First, follow the instructions in [https://github.com/leanprover/comparator](https://github.com/leanprover/comparator) to install comparator. Then, run the following command:
 
 ```
-lake env comparator comparator.json
+lake env comparator comparator-Conjecture2.json
+lake env comparator comparator-Conjecture5.json
+lake env comparator comparator-Conjecture7.json
+lake env comparator comparator-Conjecture8.json
+lake env comparator comparator-Conjecture9.json
+lake env comparator comparator-Conjecture10.json
 ```
 
 ## License
