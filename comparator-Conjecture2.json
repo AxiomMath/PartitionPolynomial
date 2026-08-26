@@ -1,0 +1,13 @@
+{
+  "challenge_module": "PartitionPolynomial.Conjecture2.problem",
+  "solution_module": "PartitionPolynomial.Conjecture2.solution",
+  "theorem_names": [
+    "main_theorem"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": false
+}

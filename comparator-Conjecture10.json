@@ -1,0 +1,14 @@
+{
+  "challenge_module": "PartitionPolynomial.Conjecture10.problem",
+  "solution_module": "PartitionPolynomial.Conjecture10.solution",
+  "theorem_names": [
+    "t_eq_three_mod",
+    "t_recurrence"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": false
+}

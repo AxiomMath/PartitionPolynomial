@@ -1,0 +1,13 @@
+{
+  "challenge_module": "PartitionPolynomial.Conjecture8.problem",
+  "solution_module": "PartitionPolynomial.Conjecture8.solution",
+  "theorem_names": [
+    "Conj8.conj8"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "enable_nanoda": false
+}
